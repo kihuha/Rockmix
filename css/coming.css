@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800|Open+Sans");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.display-1 {
+  font-size: 8rem;
+}
+
+.display-2 {
+  font-size: 4rem;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url("../img/hypnotize.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/hypnotize.png");
+}
+
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 8rem;
+}
+
+.logo__img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 20rem;
+}
+
+.logo__text {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.title-box {
+  width: 50%;
+  text-align: center;
+}
+
+.title__main {
+  font-size: 8rem;
+}
+
+.title__sub {
+  font-family: 'Open Sans', sans-serif;
+  padding: 3rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 80%;
+  margin: 1rem 2rem;
+  padding: 1.5rem;
+  -webkit-transition: -webkit-box-shadow .2s linear;
+  transition: -webkit-box-shadow .2s linear;
+  transition: box-shadow .2s linear;
+  transition: box-shadow .2s linear, -webkit-box-shadow .2s linear;
+}
+
+.social__box:hover {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .logo {
+    margin-bottom: 5rem;
+  }
+  .title-box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 50%;
+  }
+  .title-box {
+    width: 100%;
+  }
+  .logo {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo__img {
+    width: 10rem;
+  }
+}
+/*# sourceMappingURL=coming.css.map */

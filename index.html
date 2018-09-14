@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROCKMIX</title>
+
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="navbar-brand">
+                <img src="img/logow.png" alt="ROCKMIX logo" class="navbar-brand__img">
+                Rockmix
+            </h1>
+
+            <ul class="navbar-nav">
+                <li class="navbar-nav__item">
+                    <a href="#home" class="navbar-nav__link">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="#about" class="navbar-nav__link">
+                        About
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="#" class="navbar-nav__link">
+                        Collection
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="#" class="navbar-nav__link">
+                        Color Chart
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="#" class="navbar-nav__link">
+                        Portfolio
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="#" class="navbar-nav__link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <div class="social">
+                <div class="social__icon-box">
+                    <img src="img/social/facebook-icon.png" class="social__icon" alt="">
+                </div>
+                <div class="social__icon-box">
+                    <img src="img/social/linkedin-icon.png" class="social__icon" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="landing">
+        <div class="pattern">
+            <div class="pattern-box pattern-box--1">
+
+            </div>
+            <div class="pattern-box pattern-box--2">
+
+            </div>
+        </div>
+        <div class="landing__main">
+            <div class="landing__title-box">
+                <h2 class="landing__title--main display-1">
+                    Paint that lasts
+                </h2>
+                <p class="landing__title--sub">
+                    We offer a wide range of interior and exterior wall paints and finishes that give your walls character and texture. Quality is our top priority which means your finishes are guaranteed beauty waiting to be applied.
+                </p>
+
+                <button class="btn btn--primary btn--lg">
+                    Explore
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="divider" id="about">
+
+    <div class="container about">
+        <div class="row">
+            <div class="col-lg-10 col-sm-12 mx-auto">
+                <h2 class="display-2">About</h2>
+                <p class="about__text">
+                    Rockmix International Limited is a Kenyan company whose core business is manufucturing of quality paint products for the construction industry. Our focus is on providing clients with products that are of high quality and safe to use. We value our clients hence we are always willing to ensure excellence and integrity in the services and products we provide. 
+                </p>
+
+                <a href="#" class="btn btn--outline-primary btn--about">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid collection">
+        <h2 class="display-2">Our Collection</h2>
+
+        <div class="row row--collection">
+            <div class="col-md-3 col-sm-12">
+                <div class="card card--hover">
+                    1
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="card card--hover">
+                    2
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="card card--hover">
+                    3
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="card card--hover">
+                    4
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="card card--hover">
+                    5
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="card card--hover">
+                    6
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="card card--hover">
+                    7
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 ml-auto">
+                <a href="#" class="btn btn--primary btn--block">
+                    view more 
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio container">
+        <h2 class="display-2">Portfolio</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="card">
+                        1
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="card">
+                        2
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="card">
+                        3
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="card">
+                        4
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container--happy-customers">
+            <h2 class="display-2">Happy Customers</h32>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
+
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    //Smooth Scrolling
+    var html, body;
+
+    window.onload = function() {
+    //getting all anchor elements
+    var links = document.links;
+
+    //getting html
+    html = document.documentElement;
+
+    //getting body
+    body = document.body;
+
+    for (var i = 0; i < links.length; i++) {
+        links[i].onclick = function() {
+        //getting current scroll position
+        var scrollTop = Math.round(body.scrollTop || html.scrollTop);
+        if (this.hash !== "") {
+            //preventing default anchor click behavior
+            event.preventDefault();
+
+            //getting element with id found in hash
+            var hashElement = document.getElementById(this.hash.substring(1));
+
+            var hashElementTop = 0;
+            var obj = hashElement;
+            while (obj.offsetParent) {
+            hashElementTop += obj.offsetTop;
+            obj = obj.offsetParent;
+            }
+            //getting element's position
+            hashElementTop = Math.round(hashElementTop);
+
+            scroll(scrollTop, hashElementTop, this.hash);
+        }
+        };
+    }
+    };
+
+    function scroll(from, to, hash) {
+    var timeInterval = 1; //in ms
+    var prevScrollTop;
+    var increment = to > from ? 10 : -10;
+
+    var scrollByPixel = setInterval(function() {
+        //getting current scroll position
+        var scrollTop = Math.round(body.scrollTop || html.scrollTop);
+
+        if (
+        prevScrollTop == scrollTop ||
+        (to > from && scrollTop >= to) ||
+        (to < from && scrollTop <= to)
+        ) {
+        clearInterval(scrollByPixel);
+        //Add hash to the url after scrolling
+        window.location.hash = hash;
+        } else {
+        body.scrollTop += increment;
+        html.scrollTop += increment;
+
+        prevScrollTop = scrollTop;
+        }
+    }, timeInterval);
+    }
+
+    </script>
+</body>
+</html>

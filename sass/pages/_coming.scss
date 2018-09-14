@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Open+Sans');
+
+html, body {
+    height:100%;
+}
+
+body {
+    background: linear-gradient(
+        rgba(white, .8),
+        rgba(white, .8)
+    ),url('../img/hypnotize.png');
+}
+
+.container {
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:8rem;
+
+    &__img {
+        align-self: center;
+        width: 20rem;
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+}
+
+.title {
+    &-box {
+        width:50%;
+        text-align: center;
+    }
+
+    &__main {
+        font-size: 8rem;
+    }
+
+    &__sub {
+        font-family: 'Open Sans', sans-serif;
+        padding:3rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__box {
+        flex:0 0 10%;
+        align-self: center;
+        height: 80%;
+        margin:1rem 2rem;
+        padding:1.5rem;
+
+        transition: box-shadow .2s linear;
+
+        &:hover {
+            box-shadow: $shadow-light;
+            border:none;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 60%;
+    }
+
+    .logo {
+        margin-bottom:5rem;
+    }
+
+    .title-box {
+        width: 70%;
+    }
+}
+
+@media (max-width:425px) {
+    html {
+        font-size: 50%;
+    }
+    .title-box {
+        width: 100%;
+    }
+    .logo {
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+        
+        &__img {
+            width:10rem;
+        }
+    }
+}

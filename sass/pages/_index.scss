@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.divider {
+    margin:4rem;
+}
+
+.landing {
+    height: 100%;
+    
+    animation-name:fadeInRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+
+    .pattern {
+        position: relative;
+        z-index:-100;
+        &-box {
+            width: 50rem;
+            height:50rem;
+            position: absolute;
+            background:rgba($color-primary,.2);
+            transform:rotate(315deg);
+
+            &--1 {
+                left:80%;
+                margin-top:20%;
+            }
+
+            &--2 {
+                left:-20%;
+                margin-top:50%;
+            }
+        }
+    }
+
+
+    &__main {
+        width:93%;
+        height: 85%;
+        margin-right:auto;
+        
+        background: url('../img/edit-4.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+
+        box-shadow: $shadow-dark;
+        overflow: auto;
+    }
+
+    &__title {
+
+        &-box {
+            width:70%;
+            margin-top:10rem;
+            margin-left:15rem;
+            padding:2rem;
+            opacity: 0;
+            background: rgba(0,0,0,0.5);
+
+            animation-name:showText;
+            animation-delay:1.3s;
+            animation-duration:.5s;
+            animation-fill-mode: forwards;
+        }
+
+        &--main {
+            color:white;
+
+        }
+
+        &--sub {
+            color:white;
+            font-size: 2rem;
+            line-height: 1.8;
+            font-weight: 200;
+        }
+    }
+}
+
+.about {
+    padding-bottom: 4rem;
+    
+    &__text {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        padding: 2rem 4rem; 
+    }
+
+    .btn--about {
+        width:20%;
+        display: block;
+        margin-left:auto;
+    }
+}
+
+.row {
+    &--collection {
+        background:rgba($color-primary, .1);
+        padding-top:4rem;
+    }
+}
+.collection {
+    padding-top:4rem;
+
+    .display-2 {
+        padding:1rem;
+    }
+
+    .btn {
+        margin-top:5rem;
+    }
+}
+
+.portfolio {
+
+    .container {
+        &--happy-customers {
+            background:linear-gradient(
+                to bottom-right,
+                rgba($color-primary, .5),
+                rgba($color-primary, .4)
+            ), url('../img/3.jpg')
+        }
+    }
+}
