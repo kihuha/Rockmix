@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -8,36 +9,50 @@ body {
 
 .divider {
     margin:4rem;
+    color:white;
+}
+
+.pattern {
+    position: relative;
+    z-index:-100;
+    &-box {
+        width: 50rem;
+        height:50rem;
+        position: absolute;
+        background:rgba($color-primary,.2);
+        transform:rotate(315deg);
+
+        &--1 {
+            left:80%;
+            margin-top:20%;
+        }
+
+        &--2 {
+            left:-20%;
+            margin-top:50%;
+        }
+
+        &--3 {
+            left:-10%;
+            margin-top:50%;
+        }
+
+        &--4 {
+            left:80%;
+            margin-top:10%;
+        }
+    }
 }
 
 .landing {
     height: 100%;
     
+    will-change: width;
     animation-name:fadeInRight;
     animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-
-    .pattern {
-        position: relative;
-        z-index:-100;
-        &-box {
-            width: 50rem;
-            height:50rem;
-            position: absolute;
-            background:rgba($color-primary,.2);
-            transform:rotate(315deg);
-
-            &--1 {
-                left:80%;
-                margin-top:20%;
-            }
-
-            &--2 {
-                left:-20%;
-                margin-top:50%;
-            }
-        }
-    }
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 
 
     &__main {
@@ -61,7 +76,7 @@ body {
             margin-left:15rem;
             padding:2rem;
             opacity: 0;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0.8);
 
             animation-name:showText;
             animation-delay:1.3s;
@@ -78,24 +93,25 @@ body {
             color:white;
             font-size: 2rem;
             line-height: 1.8;
-            font-weight: 200;
+            font-weight:200;
         }
     }
 }
 
 .about {
-    padding-bottom: 4rem;
+    padding:0 10rem 4rem 10rem;
     
     &__text {
-        font-size: 1.4rem;
-        line-height: 1.8;
+        font-size: 1.6rem;
+        line-height: 1.9;
         padding: 2rem 4rem; 
     }
 
-    .btn--about {
-        width:20%;
-        display: block;
-        margin-left:auto;
+    &__img {
+        height: 50rem;
+        width: 100%;
+        box-shadow: 5px 5px 24px rgba(black,.5);
+        object-fit: cover;
     }
 }
 
@@ -103,6 +119,7 @@ body {
     &--collection {
         background:rgba($color-primary, .1);
         padding-top:4rem;
+        justify-content: center;
     }
 }
 .collection {
@@ -115,17 +132,260 @@ body {
     .btn {
         margin-top:5rem;
     }
+
+    .card {
+        padding:0;
+
+        &__title {
+            font-size: 5rem;
+            font-weight: 200;
+            text-align: center;
+            margin:auto 0;
+        }
+
+        &--paints {
+            background-image: linear-gradient(
+                rgba(0,0,0,.6),
+                rgba(0,0,0,.6)
+            ),url('../img/paints.jpg');
+            background-size: cover;
+            background-position: center;
+            color:white;
+        }
+
+        &--patterns {
+            background-image: linear-gradient(
+                rgba(0,0,0,.6),
+                rgba(0,0,0,.6)
+            ),url('../img/patterns.jpg');
+            background-size: cover;
+            background-position: center;
+            color:white;
+        }
+
+        &--wfinishes {
+            background-image: linear-gradient(
+                rgba(0,0,0,.6),
+                rgba(0,0,0,.6)
+            ),url('../img/wfinishes.jpg');
+            background-size: cover;
+            background-position: center;
+            color:white;
+        }
+
+    }
 }
 
 .portfolio {
 
+    .card {
+        height: 45rem;
+
+        &__img {
+            
+            width:100%;
+            height: 30rem;
+            object-fit: cover;
+        }
+
+        &__body {
+            padding:.5rem 2rem;
+            margin-bottom:1rem;
+        }
+
+        &__title {
+            font-size: 2rem;
+            margin-bottom:2rem
+        }
+
+        &__text {
+            font-size:1.4rem;
+            line-height: 1.8;
+        }
+    }
+}
+
+.contact {
+    
+    &__map {
+        padding:2rem;
+    
+        .gmap_canvas {
+            text-align: center;
+        }
+
+        iframe {
+            box-shadow: $shadow-light;
+            width:70%;
+            height: 100%;
+        }
+
+    }
+
+    &__address {
+        &-box {
+            margin:auto 0;
+        }
+
+        &-title {
+            font-size: 2.5rem;
+        }
+
+        line-height: 1.8;
+        font-size: 1.5rem;
+        height: 50%;
+    }
+
+    &__social {
+
+        .social {
+            &__icon-box {
+                margin:1rem;
+            }
+        }
+    }
+}
+
+.social {
+    &__icon {
+        margin:0 1rem;
+        &-box {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.footer {
+    height:5%;
+    background-color:rgba($color-primary, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+@media (maax-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        padding:.5rem 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 48%;
+    }
+    .landing {
+        &__title {
+            &-box {
+                width:85%;
+                margin-top:5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 45%;
+    }
+
     .container {
-        &--happy-customers {
-            background:linear-gradient(
-                to bottom-right,
-                rgba($color-primary, .5),
-                rgba($color-primary, .4)
-            ), url('../img/3.jpg')
+        
+        * {
+            font-size: 1.8rem;
+        }
+
+        .display-2 {
+            font-size: 4rem;
+        }
+        
+        .btn {
+            font-size: 1.4rem;
+        }
+    }
+
+    .landing {
+        .display-1 {
+            font-size: 5rem;
+        }
+    }
+
+    .about {
+        padding:0;
+    }
+
+    .gmap_canvas { 
+
+        iframe{
+            left:16px;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }
+    }
+
+    .contact {
+        &__address {
+            &-box {
+                padding:2rem;
+            }
+    
+            &-title {
+                font-size: 2.5rem;
+            }
+    
+            line-height: 1.8;
+            font-size: 2rem;
+        }
+    
+        &__info {
+            &-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;    
+                margin-top:4rem;
+            }
+
+            font-size: 1.8rem;
+            text-align: center;
+        }
+    }
+}
+
+
+@media (max-width: 375px) {
+    html {
+        font-size: 45%;
+    }
+
+    .hamburger {
+        margin-right:1.5rem;
+    }
+
+    .landing {
+        &__main {
+            width:95%;
+        }
+
+        &__title {
+            &-box {
+                margin-top:2rem;
+                width:90%;
+            }
         }
     }
 }

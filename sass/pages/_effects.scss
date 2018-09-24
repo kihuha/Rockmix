@@ -1,0 +1,63 @@
+.jumbotron {
+    width: 100%;
+    background: linear-gradient(
+        rgba(black,.5),
+        rgba(black,.5)
+    ),url('../img/wfinishes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 40rem;
+    padding:5rem 7rem;
+    color: white;
+
+    &__text {
+        font-size: 1.6rem;
+        font-weight: 200;
+    }
+}
+
+.effect {
+    &-box {
+        padding:3rem;
+        transform: translateY(-8rem);
+        box-shadow: $shadow-light;
+        background:white;
+
+        .row {
+            outline:solid .5px #fafafa;
+            margin:2rem;
+            padding:4rem 2rem;
+        }
+    }
+    .card {
+        
+        &--effect {
+            padding:1rem;
+
+            img {
+                object-fit: cover;
+                object-position: center;
+                height: 90%;
+                width:100%;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        &__title {
+
+            &-box {
+                margin: .5rem;
+                padding:.5rem;
+            }
+
+            font-family: inherit;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+}
+

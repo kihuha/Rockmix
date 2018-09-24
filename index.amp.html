@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROCKMIX</title>
+
+    
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="canonical" href="https://www.index.amp.html">
+
+    <style amp-custom>
+        .hamburger {padding-left: 10px;margin-right:2rem;display:none;font-size: 3rem;}.sidebar {padding: 10px;margin: 0;}.sidebar > li {list-style: none;margin-bottom:10px;}.sidebar a {text-decoration: none;}.close-sidebar {font-size: 1.5em;padding-left: 5px;}@-webkit-keyframes fadeInRight{0%{opacity:0;width:20%}100%{opacity:1;width:100%}}@keyframes fadeInRight{0%{opacity:0;width:20%}100%{opacity:1;width:100%}}@-webkit-keyframes showText{0%{opacity:0;margin-left:10rem}100%{margin-left:0;opacity:1}}@keyframes showText{0%{opacity:0;margin-left:10rem}100%{margin-left:0;opacity:1}}@-webkit-keyframes fadeTop{0%{opacity:0;margin-top:-10rem}100%{opacity:1;margin-top:0}}@keyframes fadeTop{0%{opacity:0;margin-top:-10rem}100%{opacity:1;margin-top:0}}.mx-auto{margin-left:auto;margin-right:auto}.text--right{text-align:right}*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}html{font-size:62.5%}body{font-family:"Open Sans",sans-serif}ul{list-style:none}a:link,a:visited{text-decoration:none;color:#000}h1,h2,h3,h4,h5,h6{font-family:Montserrat,sans-serif}.display-1{font-size:8rem}.display-2{font-size:4rem;margin:3rem 2rem}.btn{border:none;font-family:inherit;padding:1.5rem 4rem;text-transform:uppercase;font-weight:600;letter-spacing:2px;margin-top:2rem;-webkit-transition:-webkit-transform .2s linear;transition:-webkit-transform .2s linear;transition:transform .2s linear;transition:transform .2s linear,-webkit-transform .2s linear}.btn:hover{-webkit-transform:translateY(-3px);transform:translateY(-3px);-webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)}.btn--lg{padding:1.5rem 4rem}.btn--primary{background:#fff;position:relative}.btn--primary::before{content:'';position:absolute;height:100%;width:0;background-color:#f05a2b;top:0;left:0;-webkit-transition:width .3s cubic-bezier(1,0,0,1);transition:width .3s cubic-bezier(1,0,0,1)}.btn--primary:hover{color:#fff}.btn--primary:hover::before{width:100%;z-index:-10}.btn--outline-primary{position:relative}.btn--outline-primary:hover{color:#fff}.btn--outline-primary:hover::before{width:100%;z-index:-10}.btn--outline-primary::before{content:'';position:absolute;height:100%;width:0;background-color:#f05a2b;top:0;left:0;-webkit-transition:width .3s cubic-bezier(1,0,0,1);transition:width .3s cubic-bezier(1,0,0,1)}.card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background:#fff;z-index:100;margin-bottom:5rem;-webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);height:30rem;-webkit-transition:all .4s ease;transition:all .4s ease}.card--hover:hover{-webkit-transform:scale(1.05) translateY(-1rem);transform:scale(1.05) translateY(-1rem);-webkit-box-shadow:0 5px 5px -4px rgba(0,0,0,.16),0 5px 5px -4px rgba(0,0,0,.23),0 5px 5px -6px rgba(0,0,0,.14);box-shadow:0 5px 5px -4px rgba(0,0,0,.16),0 5px 5px -4px rgba(0,0,0,.23),0 5px 5px -6px rgba(0,0,0,.14)}.navbar{display:-webkit-box;display:-ms-flexbox;display:flex;font-size:1.2rem;text-transform:uppercase;padding:1rem}.navbar-brand{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:1.8rem;font-weight:600}.navbar-brand__img{width:7rem}.navbar-nav{display:-webkit-box;display:-ms-flexbox;display:flex;width:45%;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-left:4rem}.navbar-nav__link{padding:1rem;border-bottom:solid 3px transparent;-webkit-transition:all .3s ease;transition:all .3s ease;position:relative}.navbar-nav__link:hover::before{content:'';width:100%;height:10%}.navbar-nav__link::before{content:'';width:0%;height:10%;top:110%;left:0;position:absolute;background:#f05a2b;z-index:1000;-webkit-transition:all .3s linear;transition:all .3s linear}.social{width:10%;display:-webkit-box;display:-ms-flexbox;display:flex;margin-left:auto;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.social__icon{height:100%}.social__icon-box{width:1.8rem;height:1.8rem;margin:0 .5rem}@media(max-width:1000px){.hamburger{display: block;}.navbar-nav,.social{visibility:hidden;}}
+        /*!
+        * Bootstrap Grid v4.1.0 (https://getbootstrap.com/)
+        * Copyright 2011-2018 The Bootstrap Authors
+        * Copyright 2011-2018 Twitter, Inc.
+        * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+        */html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;-webkit-box-flex:1;flex-grow:1;max-width:100%}.col-auto{-ms-flex:0 0 auto;-webkit-box-flex:0;flex:0 0 auto;width:auto;max-width:none}.col-1{-ms-flex:0 0 8.333333%;-webkit-box-flex:0;flex:0 0 8.333333%;max-width:8.333333%}.col-2{-ms-flex:0 0 16.666667%;-webkit-box-flex:0;flex:0 0 16.666667%;max-width:16.666667%}.col-3{-ms-flex:0 0 25%;-webkit-box-flex:0;flex:0 0 25%;max-width:25%}.col-4{-ms-flex:0 0 33.333333%;-webkit-box-flex:0;flex:0 0 33.333333%;max-width:33.333333%}.col-5{-ms-flex:0 0 41.666667%;-webkit-box-flex:0;flex:0 0 41.666667%;max-width:41.666667%}.col-6{-ms-flex:0 0 50%;-webkit-box-flex:0;flex:0 0 50%;max-width:50%}.col-7{-ms-flex:0 0 58.333333%;-webkit-box-flex:0;flex:0 0 58.333333%;max-width:58.333333%}.col-8{-ms-flex:0 0 66.666667%;-webkit-box-flex:0;flex:0 0 66.666667%;max-width:66.666667%}.col-9{-ms-flex:0 0 75%;-webkit-box-flex:0;flex:0 0 75%;max-width:75%}.col-10{-ms-flex:0 0 83.333333%;-webkit-box-flex:0;flex:0 0 83.333333%;max-width:83.333333%}.col-11{-ms-flex:0 0 91.666667%;-webkit-box-flex:0;flex:0 0 91.666667%;max-width:91.666667%}.col-12{-ms-flex:0 0 100%;-webkit-box-flex:0;flex:0 0 100%;max-width:100%}@media (min-width:576px){.col-sm{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;-webkit-box-flex:1;flex-grow:1;max-width:100%}.col-sm-auto{-ms-flex:0 0 auto;-webkit-box-flex:0;flex:0 0 auto;width:auto;max-width:none}.col-sm-1{-ms-flex:0 0 8.333333%;-webkit-box-flex:0;flex:0 0 8.333333%;max-width:8.333333%}.col-sm-2{-ms-flex:0 0 16.666667%;-webkit-box-flex:0;flex:0 0 16.666667%;max-width:16.666667%}.col-sm-3{-ms-flex:0 0 25%;-webkit-box-flex:0;flex:0 0 25%;max-width:25%}.col-sm-4{-ms-flex:0 0 33.333333%;-webkit-box-flex:0;flex:0 0 33.333333%;max-width:33.333333%}.col-sm-5{-ms-flex:0 0 41.666667%;-webkit-box-flex:0;flex:0 0 41.666667%;max-width:41.666667%}.col-sm-6{-ms-flex:0 0 50%;-webkit-box-flex:0;flex:0 0 50%;max-width:50%}.col-sm-7{-ms-flex:0 0 58.333333%;-webkit-box-flex:0;flex:0 0 58.333333%;max-width:58.333333%}.col-sm-8{-ms-flex:0 0 66.666667%;-webkit-box-flex:0;flex:0 0 66.666667%;max-width:66.666667%}.col-sm-9{-ms-flex:0 0 75%;-webkit-box-flex:0;flex:0 0 75%;max-width:75%}.col-sm-10{-ms-flex:0 0 83.333333%;-webkit-box-flex:0;flex:0 0 83.333333%;max-width:83.333333%}.col-sm-11{-ms-flex:0 0 91.666667%;-webkit-box-flex:0;flex:0 0 91.666667%;max-width:91.666667%}.col-sm-12{-ms-flex:0 0 100%;-webkit-box-flex:0;flex:0 0 100%;max-width:100%}}@media (min-width:768px){.col-md{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;-webkit-box-flex:1;flex-grow:1;max-width:100%}.col-md-auto{-ms-flex:0 0 auto;-webkit-box-flex:0;flex:0 0 auto;width:auto;max-width:none}.col-md-1{-ms-flex:0 0 8.333333%;-webkit-box-flex:0;flex:0 0 8.333333%;max-width:8.333333%}.col-md-2{-ms-flex:0 0 16.666667%;-webkit-box-flex:0;flex:0 0 16.666667%;max-width:16.666667%}.col-md-3{-ms-flex:0 0 25%;-webkit-box-flex:0;flex:0 0 25%;max-width:25%}.col-md-4{-ms-flex:0 0 33.333333%;-webkit-box-flex:0;flex:0 0 33.333333%;max-width:33.333333%}.col-md-5{-ms-flex:0 0 41.666667%;-webkit-box-flex:0;flex:0 0 41.666667%;max-width:41.666667%}.col-md-6{-ms-flex:0 0 50%;-webkit-box-flex:0;flex:0 0 50%;max-width:50%}.col-md-7{-ms-flex:0 0 58.333333%;-webkit-box-flex:0;flex:0 0 58.333333%;max-width:58.333333%}.col-md-8{-ms-flex:0 0 66.666667%;-webkit-box-flex:0;flex:0 0 66.666667%;max-width:66.666667%}.col-md-9{-ms-flex:0 0 75%;-webkit-box-flex:0;flex:0 0 75%;max-width:75%}.col-md-10{-ms-flex:0 0 83.333333%;-webkit-box-flex:0;flex:0 0 83.333333%;max-width:83.333333%}.col-md-11{-ms-flex:0 0 91.666667%;-webkit-box-flex:0;flex:0 0 91.666667%;max-width:91.666667%}.col-md-12{-ms-flex:0 0 100%;-webkit-box-flex:0;flex:0 0 100%;max-width:100%}}@media (min-width:992px){.col-lg{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;-webkit-box-flex:1;flex-grow:1;max-width:100%}.col-lg-auto{-ms-flex:0 0 auto;-webkit-box-flex:0;flex:0 0 auto;width:auto;max-width:none}.col-lg-1{-ms-flex:0 0 8.333333%;-webkit-box-flex:0;flex:0 0 8.333333%;max-width:8.333333%}.col-lg-2{-ms-flex:0 0 16.666667%;-webkit-box-flex:0;flex:0 0 16.666667%;max-width:16.666667%}.col-lg-3{-ms-flex:0 0 25%;-webkit-box-flex:0;flex:0 0 25%;max-width:25%}.col-lg-4{-ms-flex:0 0 33.333333%;-webkit-box-flex:0;flex:0 0 33.333333%;max-width:33.333333%}.col-lg-5{-ms-flex:0 0 41.666667%;-webkit-box-flex:0;flex:0 0 41.666667%;max-width:41.666667%}.col-lg-6{-ms-flex:0 0 50%;-webkit-box-flex:0;flex:0 0 50%;max-width:50%}.col-lg-7{-ms-flex:0 0 58.333333%;-webkit-box-flex:0;flex:0 0 58.333333%;max-width:58.333333%}.col-lg-8{-ms-flex:0 0 66.666667%;-webkit-box-flex:0;flex:0 0 66.666667%;max-width:66.666667%}.col-lg-9{-ms-flex:0 0 75%;-webkit-box-flex:0;flex:0 0 75%;max-width:75%}.col-lg-10{-ms-flex:0 0 83.333333%;-webkit-box-flex:0;flex:0 0 83.333333%;max-width:83.333333%}.col-lg-11{-ms-flex:0 0 91.666667%;-webkit-box-flex:0;flex:0 0 91.666667%;max-width:91.666667%}.col-lg-12{-ms-flex:0 0 100%;-webkit-box-flex:0;flex:0 0 100%;max-width:100%}}.header{padding:1rem 7rem;position:sticky-top;width:100%}body,html{height:100%}body{overflow-x:hidden}.landing{height:100%;-webkit-animation-name:fadeInRight;animation-name:fadeInRight;-webkit-animation-duration:1.5s;animation-duration:1.5s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}.landing .pattern{position:relative;z-index:-100}.landing .pattern-box{width:50rem;height:50rem;position:absolute;background:rgba(240,90,43,.2);-webkit-transform:rotate(315deg);transform:rotate(315deg)}.landing .pattern-box--1{left:80%;margin-top:20%}.landing .pattern-box--2{left:-20%;margin-top:50%}.landing__main{width:93%;height:85vh;margin-right:auto;background:url(../img/edit-4.jpg);background-size:cover;background-attachment:fixed;-webkit-box-shadow:0 5px 5px -4px rgba(0,0,0,.16),0 5px 5px -4px rgba(0,0,0,.23),0 5px 5px -6px rgba(0,0,0,.14);box-shadow:0 5px 5px -4px rgba(0,0,0,.16),0 5px 5px -4px rgba(0,0,0,.23),0 5px 5px -6px rgba(0,0,0,.14);overflow:auto}.landing__title-box{width:70%;margin-top:10rem;margin-left:15rem;padding:2rem;opacity:0;background:rgba(0,0,0,.5);-webkit-animation-name:showText;animation-name:showText;-webkit-animation-delay:1.3s;animation-delay:1.3s;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}.landing__title--main{color:#fff}.landing__title--sub{color:#fff;font-size:2rem;line-height:1.8;font-weight:200}.about{padding-bottom:4rem}.about__text{font-size:1.4rem;line-height:1.8;padding:2rem 4rem}.about .btn--about{width:20%;display:block;margin-left:auto}.row--collection{background:rgba(240,90,43,.1);padding-top:4rem}.collection{padding-top:4rem}.collection .display-2{padding:1rem}.collection .btn{margin-top:5rem}.collection .card{padding:0}.collection .card__title{font-size:5rem;font-weight:200;text-align:center;margin:auto 0}.collection .card--paints{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.6)),to(rgba(0,0,0,.6))),url(../img/paints.jpg);background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../img/paints.jpg);background-size:cover;background-position:center;color:#fff}.collection .card--patterns{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.6)),to(rgba(0,0,0,.6))),url(../img/patterns.jpg);background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../img/patterns.jpg);background-size:cover;background-position:center;color:#fff}.collection .card--wfinishes{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.6)),to(rgba(0,0,0,.6))),url(../img/wfinishes.jpg);background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../img/wfinishes.jpg);background-size:cover;background-position:center;color:#fff}.portfolio .card{height:45rem}.contact{height:75vh;background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.6))),url(../img/3.jpg);background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),url(../img/3.jpg);background-attachment:fixed;background-size:cover;background-blend-mode:color;-webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)}.contact .display-2{color:#fff}.footer{height:5%;background-color:rgba(240,90,43,.2);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:1.2rem;font-weight:700}@media(max-width:768px){.header {padding:0;}}
+    </style>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+            <h1 class="navbar-brand">
+                <amp-img src="img/logow.png" alt="ROCKMIX logo" class="navbar-brand__img" width="70" height="40" layout="responsive">
+                </amp-img>
+                Rockmix
+            </h1>
+
+            <ul class="navbar-nav">
+                <li class="navbar-nav__item">
+                    <a href="#home" class="navbar-nav__link">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="#about" class="navbar-nav__link">
+                        About
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="color-chart.html" class="navbar-nav__link">
+                        Color Chart
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="color-chart.html" class="navbar-nav__link">
+                        Pattern Chart
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="#" class="navbar-nav__link">
+                        Portfolio
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="#" class="navbar-nav__link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <div class="social">
+                <div class="social__icon-box">
+                    <amp-img src="img/social/facebook-icon.png" class="social__icon" alt="Rockmix facebook page" width="9" height="18"></amp-img>
+                </div>
+                <div class="social__icon-box">
+                    <amp-img src="img/social/linkedin-icon.png" class="social__icon" alt="Rockmix linkedin page" width="18" height="18"></amp-img>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
+        <ul class="sidebar">
+            <li class="navbar-nav__item">
+                <a href="#home" class="navbar-nav__link">
+                    Home
+                </a>
+            </li>
+            <li class="navbar-nav__item">
+                <a href="#about" class="navbar-nav__link">
+                    About
+                </a>
+            </li>
+            <li class="navbar-nav__item">
+                <a href="color-chart.html" class="navbar-nav__link">
+                    Color Chart
+                </a>
+            </li>
+            <li class="navbar-nav__item">
+                <a href="color-chart.html" class="navbar-nav__link">
+                    Pattern Chart
+                </a>
+            </li>
+            <li class="navbar-nav__item">
+                <a href="#" class="navbar-nav__link">
+                    Portfolio
+                </a>
+            </li>
+            <li class="navbar-nav__item">
+                <a href="#" class="navbar-nav__link">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </amp-sidebar>
+
+    <div class="landing">
+        <div class="pattern">
+            <div class="pattern-box pattern-box--1">
+
+            </div>
+            <div class="pattern-box pattern-box--2">
+
+            </div>
+        </div>
+        <div class="landing__main">
+            <div class="landing__title-box">
+                <h2 class="landing__title--main display-1">
+                    Paint that lasts
+                </h2>
+                <p class="landing__title--sub">
+                    We offer a wide range of interior and exterior wall paints and finishes that give your walls character and texture. Quality is our top priority which means your finishes are guaranteed beauty waiting to be applied.
+                </p>
+
+                <button class="btn btn--primary btn--lg">
+                    Explore
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <span id="about"></span>
+
+    <div class="container about">
+        <div class="row">
+            <div class="col-lg-10 col-sm-12 mx-auto">
+                <h2 class="display-2">About</h2>
+                <p class="about__text">
+                    Rockmix International Limited is a Kenyan company whose core business is manufucturing of quality paint products for the construction industry. Our focus is on providing clients with products that are of high quality and safe to use. We value our clients hence we are always willing to ensure excellence and integrity in the services and products we provide. 
+                </p>
+
+                <a href="#" class="btn btn--outline-primary btn--about">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid collection">
+        <h2 class="display-2 text--right">Our Collection</h2>
+
+        <div class="row row--collection">
+            <div class="col-md-4 col-sm-12">
+                <div class="card card--hover card--paints">
+                    <h4 class="card__title">
+                        Paints
+                    </h4>
+
+                    <a href="color-chart.html" class="btn btn--primary">
+                        Color Chart
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="card card--hover card--patterns">
+                    <h4 class="card__title">
+                        Patterns
+                    </h4>
+
+                    <a href="#" class="btn btn--primary">
+                        Pattern Chart
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="card card--hover card--wfinishes">
+                    <h4 class="card__title">
+                        Wall Finishes
+                    </h4>
+
+                    <a href="#" class="btn btn--primary">
+                        See more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio container">
+        <h2 class="display-2">Portfolio</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-sm-12">
+                    <div class="card">
+                        1
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                    <div class="card">
+                        2
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                    <div class="card">
+                        3
+                    </div>
+                </div>
+                <div class="col-lg-7 col-sm-12">
+                    <div class="card">
+                        4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid contact">
+        <h2 class="display-2">Contact Us</h2>
+        
+    </div>
+
+    <footer class="footer">
+        &copy; Rockmix International Limited 2018
+    </footer>
+</body>
+</html>

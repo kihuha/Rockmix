@@ -1,0 +1,68 @@
+.jumbotron {
+    width: 100%;
+    background: linear-gradient(
+        rgba(black,.5),
+        rgba(black,.5)
+    ),url('../img/collage-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 40rem;
+    padding:5rem 7rem;
+    color: white;
+}
+
+.color {
+    &-box {
+        padding:3rem;
+        transform: translateY(-8rem);
+        box-shadow: $shadow-light;
+        background:white;
+
+        .row {
+            outline:solid .5px #fafafa;
+            margin:2rem;
+            padding:4rem 2rem;
+        }
+
+        h4 {
+            font-size: 3.5rem;
+            font-weight: 200;
+            letter-spacing: .4rem;
+        }
+    }
+
+    &--reds {
+        background-color: rgba(red, .1);
+    }
+
+    &--pinks {
+        background-color: rgba(pink, .1);
+    }
+
+    &--oranges{
+        background-color: rgba(orange, .1);
+    }
+
+    &--greens {
+        background-color: rgba(green, .1);
+    }
+
+    &--purples {
+        background-color: rgba(purple, .1);
+    }
+
+    .card--color {
+        height: 12rem;
+    }
+
+    &__title {
+        font-weight: 100;
+        color:#fafafa;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom:auto;
+    }
+}
+

@@ -8,10 +8,17 @@
 
     
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <style>
+        .mapouter{text-align:right;height:500px;width:715px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:715px;}
+    </style>
+
 </head>
-<body>
+<body id="body">
     <header class="header">
         <nav class="navbar">
+            <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
             <h1 class="navbar-brand">
                 <img src="img/logow.png" alt="ROCKMIX logo" class="navbar-brand__img">
                 Rockmix
@@ -29,35 +36,21 @@
                     </a>
                 </li>
                 <li class="navbar-nav__item">
-                    <a href="#" class="navbar-nav__link">
-                        Collection
+                    <a href="#products" class="navbar-nav__link">
+                        Products
                     </a>
                 </li>
                 <li class="navbar-nav__item">
-                    <a href="#" class="navbar-nav__link">
-                        Color Chart
-                    </a>
-                </li>
-                <li class="navbar-nav__item">
-                    <a href="#" class="navbar-nav__link">
+                    <a href="#portfolio" class="navbar-nav__link">
                         Portfolio
                     </a>
                 </li>
                 <li class="navbar-nav__item">
-                    <a href="#" class="navbar-nav__link">
+                    <a href="#contact" class="navbar-nav__link">
                         Contact
                     </a>
                 </li>
             </ul>
-
-            <div class="social">
-                <div class="social__icon-box">
-                    <img src="img/social/facebook-icon.png" class="social__icon" alt="">
-                </div>
-                <div class="social__icon-box">
-                    <img src="img/social/linkedin-icon.png" class="social__icon" alt="">
-                </div>
-            </div>
         </nav>
     </header>
 
@@ -79,137 +72,216 @@
                     We offer a wide range of interior and exterior wall paints and finishes that give your walls character and texture. Quality is our top priority which means your finishes are guaranteed beauty waiting to be applied.
                 </p>
 
-                <button class="btn btn--primary btn--lg">
-                    Explore
+                <a href="#portfolio" class="btn btn--primary btn--lg">
+                    Portfolio
+                </a>
+                <button class="btn btn--outline-primary btn--lg">
+                    Price List    
                 </button>
             </div>
         </div>
     </div>
     
-    <hr class="divider" id="about">
+    <span id="about"></span>
 
-    <div class="container about">
+    <div class="container-fluid about">
         <div class="row">
-            <div class="col-lg-10 col-sm-12 mx-auto">
+            <div class="col-lg-7 col-sm-12 mx-auto">
                 <h2 class="display-2">About</h2>
                 <p class="about__text">
                     Rockmix International Limited is a Kenyan company whose core business is manufucturing of quality paint products for the construction industry. Our focus is on providing clients with products that are of high quality and safe to use. We value our clients hence we are always willing to ensure excellence and integrity in the services and products we provide. 
                 </p>
-
-                <a href="#" class="btn btn--outline-primary btn--about">Read More</a>
+                <p class="about__text">
+                    We guarantee quality paints at an affordable price that last longer. 
+                </p>
+            </div>
+            <div class="col-lg-5">
+                <img src="img/about.jpg" alt="" class="about__img">
             </div>
         </div>
     </div>
 
     <div class="container-fluid collection">
-        <h2 class="display-2">Our Collection</h2>
+        <h2 class="display-2 text--right">Products</h2>
 
         <div class="row row--collection">
-            <div class="col-md-3 col-sm-12">
-                <div class="card card--hover">
-                    1
+            <div class="col-md-4 col-sm-12">
+                <div class="card card--hover card--paints">
+                    <h4 class="card__title">
+                        Paints
+                    </h4>
+
+                    <a href="color-chart.html" class="btn btn--primary">
+                        Color Chart
+                    </a>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card card--hover">
-                    2
+            <div class="col-md-4 col-sm-12">
+                <div class="card card--hover card--patterns">
+                    <h4 class="card__title">
+                        Special Effects
+                    </h4>
+
+                    <a href="special-effects.html" class="btn btn--primary">
+                        View Collection
+                    </a>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card card--hover">
-                    3
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card card--hover">
-                    4
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card card--hover">
-                    5
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card card--hover">
-                    6
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card card--hover">
-                    7
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12 ml-auto">
-                <a href="#" class="btn btn--primary btn--block">
-                    view more 
-                </a>
             </div>
         </div>
     </div>
 
-    <div class="portfolio container">
+    <span id="portfolio"></span>
+
+    <div class="portfolio container-fluid">
+        <div class="pattern">
+            <div class="pattern-box pattern-box--3">
+
+            </div>
+            <div class="pattern-box pattern-box--4">
+
+            </div>
+        </div>
         <h2 class="display-2">Portfolio</h2>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class="card">
-                        1
+                        <div class="card__img-box">
+                            <img src="img/portfolio/rockmix.jpg" alt="" class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title">Rockmix International Limited</h4>
+                            <p class="card__text">
+                                Yogi Corp plaza
+                            </p>
+                            <p class="card__text">
+                                Interior design of walls and wall finishes
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class="card">
-                        2
+                        <div class="card__img-box">
+                            <img src="img/portfolio/makena.jpg" alt="" class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title"> 47 Makena Apartments</h4>
+                            <p class="card__text">
+                                Naivasha Road, Nairobi
+                            </p>
+                            <p class="card__text">
+                                Exterior painting and wall finishes
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class="card">
-                        3
+                        <div class="card__img-box">
+                            <img src="img/portfolio/juja.jpg" alt="" class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title">Caren Garden</h4>
+                            <p class="card__text">
+                                Juja
+                            </p>
+                            <p class="card__text">
+                                Exterior painting and wall finishes
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class="card">
-                        4
+                        <div class="card__img-box">
+                            <img src="img/portfolio/residential.jpg" alt="" class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title">Residential Homes</h4>
+                            <p class="card__text">
+                                Kahawa Sukari
+                            </p>
+                            <p class="card__text">
+                                Exterior painting and wall finishes
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container container--happy-customers">
-            <h2 class="display-2">Happy Customers</h32>
-            <div class="row">
-                <div class="col-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class="card">
-
+                        <div class="card__img-box">
+                            <img src="img/portfolio/perimeter.jpg" alt="" class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title">Perimeter walls</h4>
+                            <p class="card__text">
+                                Kahawa Sukari
+                            </p>
+                            <p class="card__text">
+                                Exterior wall finish
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class="card">
-
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card">
-
+                        <div class="card__img-box">
+                            <img src="img/portfolio/apartments.jpg" alt="" class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="card__title">Apartments 1</h4>
+                            <p class="card__text">
+                                Unknown
+                            </p>
+                            <p class="card__text">
+                                Exterior wall finish
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
+    <span id="contact"></span>
+
+    <h2 class="display-2">Contact Us</h2>
+
+    <div class="container-fluid contact row">
+        <div class="contact__map col-lg-7 col-md-12 col-sm-12">
+            <div class="mapouter">
+                <div class="gmap_canvas map-responsive">
+                    <iframe width="650" height="430" id="gmap_canvas" src="https://maps.google.com/maps?q=Yogi%20Corp%20EA&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://www.crocothemes.net"></a>
+                </div>
+            </div>
+        </div>
+        <div class="contact__address-box col-lg-5 col-md-12 col-sm-12">
+            <div class="contact__address col-sm-6">
+                <h4 class="contact__address-title">Head Office</h4>
+                <p>1st Floor Room 1C</p>
+                <p>Yogi Corp Plaza</p>
+                <p>Factory Street, Industrial Area</p>
+                <p>Nairobi, Kenya</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; Rockmix International Limited 2018
+    </footer>
+
+<script>
     //Smooth Scrolling
     var html, body;
-
     window.onload = function() {
     //getting all anchor elements
     var links = document.links;
-
     //getting html
     html = document.documentElement;
-
     //getting body
     body = document.body;
-
     for (var i = 0; i < links.length; i++) {
         links[i].onclick = function() {
         //getting current scroll position
@@ -261,7 +333,6 @@
         }
     }, timeInterval);
     }
-
-    </script>
+</script>
 </body>
 </html>

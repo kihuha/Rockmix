@@ -1,6 +1,6 @@
 //ABSTRACTS//
 @import 'abstracts/animation';
-@import 'abstracts/mixins';
+@import 'abstracts/color-function';
 @import 'abstracts/util';
 @import 'abstracts/variables';
 
@@ -18,6 +18,4 @@
 @import 'layout/header';
 
 //PAGES//
-@import 'pages/index';
-
-//VENDOR//
+@import 'pages/color';

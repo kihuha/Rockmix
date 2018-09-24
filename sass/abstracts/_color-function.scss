@@ -1,0 +1,113 @@
+//COLORS
+$reds:
+    indianred 
+    lightcoral
+    salmon 
+    darksalmon 
+    lightsalmon 
+    crimson 
+    red 
+    firebrick 
+    darkred;
+
+$pinks: 
+    pink
+    lightpink
+    hotpink
+    deeppink
+    mediumvioletred
+    palevioletred;
+
+$oranges:
+    coral
+    tomato
+    orange
+    darkorange
+    orangered;
+
+$purples:
+    lavender
+    thistle
+    plum
+    violet
+    orchid
+    fuchsia
+    magenta
+    mediumorchid
+    mediumpurple
+    blueviolet
+    darkviolet
+    darkorchid
+    darkmagenta
+    purple
+    rebeccapurple
+    indigo
+    mediumslateblue
+    slateblue
+    darkslateblue;
+
+$greens:
+    greenyellow
+    chartreuse
+    lawngreen
+    lime
+    limegreen
+    palegreen
+    lightgreen
+    mediumspringgreen
+    springgreen
+    mediumseagreen
+    seagreen
+    forestgreen
+    green
+    darkgreen
+    yellowgreen
+    olivedrab
+    olive
+    darkolivegreen
+    mediumaquamarine
+    darkseagreen
+    lightseagreen
+    darkcyan
+    teal;
+
+
+@each $current-color in $reds {
+    .color {
+        [data-color="#{$current-color}"] { 
+            background-color: $current-color;
+        }
+    }
+}
+
+@each $current-color in $pinks {
+    .color {
+        [data-color="#{$current-color}"] { 
+            background-color: $current-color;
+        }
+    }
+}
+
+@each $current-color in $oranges {
+    .color {
+        [data-color="#{$current-color}"] { 
+            background-color: $current-color;
+        }
+    }
+}
+
+@each $current-color in $purples {
+    .color {
+        [data-color="#{$current-color}"] { 
+            background-color: $current-color;
+        }
+    }
+}
+
+@each $current-color in $greens {
+    .color {
+        [data-color="#{$current-color}"] { 
+            background-color: $current-color;
+        }
+    }
+}
