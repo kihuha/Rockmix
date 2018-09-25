@@ -28,3 +28,11 @@ html {
 @import "../vendor/mixins/grid-framework";
 @import "../vendor/mixins/grid";
 @import "../vendor/grid-bootstrap";
+
+.row, [class^='col-'] {
+
+  @media only screen and (max-width:$breakpoint-small) {
+      margin:0;
+      padding:0;
+  }
+}

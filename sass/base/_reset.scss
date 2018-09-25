@@ -1,4 +1,3 @@
-
 // REBOOT
 * {
     margin:0;
@@ -20,9 +19,17 @@ ul {
 
 a:link, a:visited {
     text-decoration: none;
-    color:black;
+    color:inherit;
 }
 
 img {
     width:100%;
+}
+
+button {
+    border:0;
+    padding:0;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
 }

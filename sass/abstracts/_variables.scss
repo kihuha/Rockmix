@@ -3,6 +3,7 @@ $color-primary: #f05a2b;
 
 
 //FONT 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800|Open+Sans:400,700');
 $font-family-base: 'Open Sans', sans-serif;
 $font-family-alt: 'Montserrat', sans-serif;
 
@@ -16,3 +17,11 @@ $shadow-dark: 0 5px 5px -4px rgba(0, 0, 0, 0.16), 0 5px 5px -4px rgba(0, 0, 0, 0
 $btn-padding-x: 1.5rem;
 $btn-padding-y: 4rem;
 $border-radius-btn: 4px;
+
+//BREAKPOINTS
+$breakpoint-largest: 900px;
+$breakpoint-large: 768px;
+$breakpoint-medium: 510px;
+$breakpoint-small: 470px;
+$breakpoint-smallest: 375px;
+

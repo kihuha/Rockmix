@@ -1,9 +1,13 @@
-h1,h2,h3,h4,h5,h6 {
+.display-1, .display-2 {
     font-family: $font-family-alt;
 }
 
 .display-1 {
     font-size: 8rem;
+
+    @media only screen and (max-width:470px) {
+        font-size: 7rem;
+    }
 }
 
 .display-2 {

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800|Open+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800|Open+Sans");
 * {
   margin: 0;
@@ -20,19 +21,33 @@ ul {
 
 a:link, a:visited {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 img {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+button {
+  border: 0;
+  padding: 0;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.display-1, .display-2 {
   font-family: "Montserrat", sans-serif;
 }
 
 .display-1 {
   font-size: 8rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .display-1 {
+    font-size: 7rem;
+  }
 }
 
 .display-2 {
