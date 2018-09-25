@@ -2,25 +2,66 @@
     padding:1rem 4rem;
     font-size: 1.3rem;
     font-weight: bold;
-    color:white;
+    color:$color-primary;
     border:solid 1px transparent;
     transition: all .2s linear;
 
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: $shadow-light;
+    }
+
     &--primary {
-        background:$color-primary;
-        color:inherit;
+        background: white;
+        position:relative;
+        border:solid 1px transparent;
+
+        &::before {
+            content:'';
+            position: absolute;
+            height: 100%;
+            width:0;
+            background-color:$color-primary;
+            top:0;
+            left:0;
+            transition: width .3s cubic-bezier(1,0,0,1);
+        }
 
         &:hover {
-            background:darken($color-primary, 10%);
+            color:white;
+
+            &::before {
+                width:100%;
+                z-index: -10;
+            }
         }
     }
 
     &--outline-primary {
+        position:relative;
         background:transparent;
+        color:white;
         border:solid 1px white;
 
         &:hover {
-            background:darken($color-primary, 10%);
+            color:white;
+
+            &::before {
+                width:100%;
+                z-index: -10;
+            }
+        }
+        
+        &::before {
+            content:'';
+            position: absolute;
+            height: 100%;
+            width:0;
+            background-color:$color-primary;
+            top:0;
+            left:0;
+            transition: width .3s cubic-bezier(1,0,0,1);
+            z-index: -1;
         }
     }
 
