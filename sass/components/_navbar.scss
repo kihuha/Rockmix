@@ -4,7 +4,7 @@
     padding:1rem;
 
 
-    @media only screen and (max-width:768px) {
+    @media only screen and (max-width:$breakpoint-largest) {
         justify-content: space-between;
     }
 
@@ -88,7 +88,7 @@
     color:$color-primary;
 }
 
-@media (max-width:1200px) {
+@media (max-width:$breakpoint-largest) {
     .navbar-nav {
         display: none;
     }
@@ -97,7 +97,7 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: $breakpoint-small) {
     .navbar {
         
         &-brand {
