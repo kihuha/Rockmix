@@ -28,7 +28,7 @@ If your already have sass installed, compile the main source files contained ins
 
 [![HTML5](http://mycyberuniverse.com/public-files/images/logos/HTML5.png)]()
 [![CSS3](http://mycyberuniverse.com/public-files/images/logos/CSS3.png)]()
-[![CSS3](https://github.com/kihuha/Rockmix/blob/version-1.1/img/amp.png)]()
+
 
 ## Authors
 
