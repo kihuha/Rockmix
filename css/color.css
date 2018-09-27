@@ -312,6 +312,170 @@
   background-color: teal;
 }
 
+.color [data-color="aqua"] {
+  background-color: aqua;
+}
+
+.color [data-color="cyan"] {
+  background-color: cyan;
+}
+
+.color [data-color="lightcyan"] {
+  background-color: lightcyan;
+}
+
+.color [data-color="paleturquoise"] {
+  background-color: paleturquoise;
+}
+
+.color [data-color="aquamarine"] {
+  background-color: aquamarine;
+}
+
+.color [data-color="turquoise"] {
+  background-color: turquoise;
+}
+
+.color [data-color="mediumturquoise"] {
+  background-color: mediumturquoise;
+}
+
+.color [data-color="darkturquoise"] {
+  background-color: darkturquoise;
+}
+
+.color [data-color="cadetblue"] {
+  background-color: cadetblue;
+}
+
+.color [data-color="steelblue"] {
+  background-color: steelblue;
+}
+
+.color [data-color="lightsteelblue"] {
+  background-color: lightsteelblue;
+}
+
+.color [data-color="powderblue"] {
+  background-color: powderblue;
+}
+
+.color [data-color="lightblue"] {
+  background-color: lightblue;
+}
+
+.color [data-color="skyblue"] {
+  background-color: skyblue;
+}
+
+.color [data-color="lightskyblue"] {
+  background-color: lightskyblue;
+}
+
+.color [data-color="deepskyblue"] {
+  background-color: deepskyblue;
+}
+
+.color [data-color="dodgerblue"] {
+  background-color: dodgerblue;
+}
+
+.color [data-color="cornflowerblue"] {
+  background-color: cornflowerblue;
+}
+
+.color [data-color="royalblue"] {
+  background-color: royalblue;
+}
+
+.color [data-color="blue"] {
+  background-color: blue;
+}
+
+.color [data-color="mediumblue"] {
+  background-color: mediumblue;
+}
+
+.color [data-color="darkblue"] {
+  background-color: darkblue;
+}
+
+.color [data-color="navy"] {
+  background-color: navy;
+}
+
+.color [data-color="midnightblue"] {
+  background-color: midnightblue;
+}
+
+.color [data-color="cornsilk"] {
+  background-color: cornsilk;
+}
+
+.color [data-color="blanchedalmond"] {
+  background-color: blanchedalmond;
+}
+
+.color [data-color="bisque"] {
+  background-color: bisque;
+}
+
+.color [data-color="navajowhite"] {
+  background-color: navajowhite;
+}
+
+.color [data-color="wheat"] {
+  background-color: wheat;
+}
+
+.color [data-color="burlywood"] {
+  background-color: burlywood;
+}
+
+.color [data-color="tan"] {
+  background-color: tan;
+}
+
+.color [data-color="rosybrown"] {
+  background-color: rosybrown;
+}
+
+.color [data-color="sandybrown"] {
+  background-color: sandybrown;
+}
+
+.color [data-color="goldenrod"] {
+  background-color: goldenrod;
+}
+
+.color [data-color="darkgoldenrod"] {
+  background-color: darkgoldenrod;
+}
+
+.color [data-color="peru"] {
+  background-color: peru;
+}
+
+.color [data-color="chocolate"] {
+  background-color: chocolate;
+}
+
+.color [data-color="saddlebrown"] {
+  background-color: saddlebrown;
+}
+
+.color [data-color="sienna"] {
+  background-color: sienna;
+}
+
+.color [data-color="brown"] {
+  background-color: brown;
+}
+
+.color [data-color="maroon"] {
+  background-color: maroon;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -961,12 +1125,16 @@ html {
   color: white;
 }
 
+.jumbotron__text {
+  width: 60%;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
 .color-box {
   padding: 3rem;
-  -webkit-transform: translateY(-8rem);
-          transform: translateY(-8rem);
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-transform: translateY(-12rem);
+          transform: translateY(-12rem);
   background: white;
 }
 
@@ -974,6 +1142,8 @@ html {
   outline: solid .5px #fafafa;
   margin: 2rem;
   padding: 4rem 2rem;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .color-box h4 {
@@ -1002,13 +1172,21 @@ html {
   background-color: rgba(128, 0, 128, 0.1);
 }
 
+.color--blues {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.color--browns {
+  background-color: rgba(165, 42, 42, 0.1);
+}
+
 .color .card--color {
   height: 12rem;
 }
 
 .color__title {
   font-weight: 100;
-  color: #fafafa;
+  color: #eee;
   font-size: 2rem;
   text-align: center;
   margin-top: auto;

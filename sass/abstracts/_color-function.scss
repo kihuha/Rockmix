@@ -71,6 +71,51 @@ $greens:
     darkcyan
     teal;
 
+$blues:
+    aqua
+    cyan
+    lightcyan
+    paleturquoise
+    aquamarine
+    turquoise
+    mediumturquoise
+    darkturquoise
+    cadetblue
+    steelblue
+    lightsteelblue
+    powderblue
+    lightblue
+    skyblue
+    lightskyblue
+    deepskyblue
+    dodgerblue
+    cornflowerblue
+    royalblue
+    blue
+    mediumblue
+    darkblue
+    navy
+    midnightblue;
+
+$browns:
+    cornsilk
+    blanchedalmond
+    bisque
+    navajowhite
+    wheat
+    burlywood
+    tan
+    rosybrown
+    sandybrown
+    goldenrod
+    darkgoldenrod
+    peru
+    chocolate
+    saddlebrown
+    sienna
+    brown
+    maroon;
+
 
 @each $current-color in $reds {
     .color {
@@ -105,6 +150,22 @@ $greens:
 }
 
 @each $current-color in $greens {
+    .color {
+        [data-color="#{$current-color}"] { 
+            background-color: $current-color;
+        }
+    }
+}
+
+@each $current-color in $blues {
+    .color {
+        [data-color="#{$current-color}"] { 
+            background-color: $current-color;
+        }
+    }
+}
+
+@each $current-color in $browns {
     .color {
         [data-color="#{$current-color}"] { 
             background-color: $current-color;

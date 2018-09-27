@@ -11,37 +11,54 @@
 </head>
 
 <body>
-        <header class="header">
+    <header class="header">
         <nav class="navbar">
             <h1 class="navbar-brand">
                 <img src="img/logow.png" alt="ROCKMIX logo" class="navbar-brand__img">
                 Rockmix
             </h1>
+            
+            <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
 
             <ul class="navbar-nav">
                 <li class="navbar-nav__item">
-                    <a href="index.html" class="navbar-nav__link">
+                    <a href="/" class="navbar-nav__link">
                         Home
                     </a>
                 </li>
+                <li class="navbar-nav__item">
+                    <a href="/#about" class="navbar-nav__link">
+                        About
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="/#products" class="navbar-nav__link">
+                        Products
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="/#portfolio" class="navbar-nav__link">
+                        Portfolio
+                    </a>
+                </li>
+                <li class="navbar-nav__item">
+                    <a href="/#contact" class="navbar-nav__link">
+                        Contact
+                    </a>
+                </li>
             </ul>
-
-            <div class="social">
-                <a href="https://www.facebook.com/RockmixLimited" class="social__icon-box" title="Rockmix Facebook page">
-                    <img src="img/social/facebook.png" class="social__icon" alt="">
-                </a>
-                <a href="https://www.linkedin.com/company/rockmix-international-limited/" class="social__icon-box">
-                    <img src="img/social/linkedin.png" class="social__icon" alt="" title="Rockmix LinkedIn page">
-                </a>
-            </div>
         </nav>
     </header>
 
     <div class="jumbotron">
         <h2 class="display-1">Color Chart</h2>
+
+        <p class="jumbotron__text">
+            Below are some of the color samples available. The list of colors is not exhaustive as we offer many more colors that come in several variations and shades
+        </p>
     </div>
 
-    <div class="container color-box">
+    <div class="container-fluid color-box">
         <h4>Reds</h4>
         <div class="row color--reds">
             <div class="col-md-2 color">
@@ -363,6 +380,214 @@
             <div class="col-md-2 color">
                 <div class="card card--color" data-color="teal">
                     <p class="color__title">Teal</p>
+                </div>
+            </div>
+        </div>
+
+        <h4>Blues</h4>
+        <div class="row color--blues">
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="aqua">
+                    <p class="color__title">Aqua</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="Cyan">
+                    <p class="color__title">Cyan</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="lightcyan">
+                    <p class="color__title">LightCyan</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="paleturquoise">
+                    <p class="color__title">PaleTurquoise</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="aquamarine">
+                    <p class="color__title">Aquamarine</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="turquoise">
+                    <p class="color__title">Turquoise</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="mediumturquoise">
+                    <p class="color__title">Medium Turquoise</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="darkturquoise">
+                    <p class="color__title">Dark Turquoise</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="cadetblue">
+                    <p class="color__title">Cadet Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="steelblue">
+                    <p class="color__title">Steel Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="lightsteelblue">
+                    <p class="color__title">Light Steel Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="powderblue">
+                    <p class="color__title">Powder Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="lightblue">
+                    <p class="color__title">Light Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="skyblue">
+                    <p class="color__title">Sky Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="lightskyblue">
+                    <p class="color__title">Light Sky Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="deepskyblue">
+                    <p class="color__title">Deep Sky Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="dodgerblue">
+                    <p class="color__title">Dodger Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="cornflowerblue">
+                    <p class="color__title">Cornflower Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="royalblue">
+                    <p class="color__title">Royal Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="blue">
+                    <p class="color__title">Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="mediumblue">
+                    <p class="color__title">Medium Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="darkblue">
+                    <p class="color__title">Dark Blue</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="navy">
+                    <p class="color__title">Navy</p>
+                </div>
+            </div>
+        </div>
+
+        <h4>Brown</h4>
+        <div class="row color--browns">
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="cornsilk">
+                    <p class="color__title">Cornsilk</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="blanchedalmond">
+                    <p class="color__title">Blanched Almond</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="bisque">
+                    <p class="color__title">Bisque</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="navajowhite">
+                    <p class="color__title">NavajoWhite</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="wheat">
+                    <p class="color__title">Wheat</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="burlywood">
+                    <p class="color__title">BurlyWood</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="tan">
+                    <p class="color__title">Tan</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="rosybrown">
+                    <p class="color__title">Rosy Brown</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="sandybrown">
+                    <p class="color__title">Sandy Brown</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="goldenrod">
+                    <p class="color__title">Golden Rod</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="darkgoldenrod">
+                    <p class="color__title">Dark Golden Rod</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="peru">
+                    <p class="color__title">Peru</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="Chocolate">
+                    <p class="color__title">Chocolate</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="saddlebrown">
+                    <p class="color__title">Saddle Brown</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="sienna">
+                    <p class="color__title">Sienna</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="brown">
+                    <p class="color__title">Brown</p>
+                </div>
+            </div>
+            <div class="col-md-2 color">
+                <div class="card card--color" data-color="maroon">
+                    <p class="color__title">Maroon</p>
                 </div>
             </div>
         </div>

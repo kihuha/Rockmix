@@ -10,19 +10,25 @@
     height: 40rem;
     padding:5rem 7rem;
     color: white;
+
+    &__text {
+        width:60%;
+        font-size: 1.6rem;
+        line-height: 1.8;
+    }
 }
 
 .color {
     &-box {
         padding:3rem;
-        transform: translateY(-8rem);
-        box-shadow: $shadow-light;
+        transform: translateY(-12rem);
         background:white;
 
         .row {
             outline:solid .5px #fafafa;
             margin:2rem;
             padding:4rem 2rem;
+            box-shadow: $shadow-light;
         }
 
         h4 {
@@ -52,13 +58,20 @@
         background-color: rgba(purple, .1);
     }
 
+    &--blues {
+        background-color: rgba(blue, .1);
+    }
+
+    &--browns {
+        background-color: rgba(brown, .1);
+    }
     .card--color {
         height: 12rem;
     }
 
     &__title {
         font-weight: 100;
-        color:#fafafa;
+        color:#eee;
         font-size: 2rem;
         text-align: center;
         margin-top: auto;
