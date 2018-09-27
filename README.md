@@ -1,22 +1,4 @@
-# Rockmix
-Central repository of the Rockmix International Limited website
-
-## Directory structure
-
-
-        ├───css
-        ├───img
-        │   └───social
-        └───sass
-            ├───abstracts
-            ├───base
-            ├───components
-            ├───layout
-            └───pages
-
-
-
-# ROCKMIX INTERNATIONAL LIMITED
+# Rockmix International Limited
 
 This is the central repository for the ROCKMIX INTERNATIONAL WEBSITE. The company manufucutures paints and amazing wall finishes for both interior and exterior walls and decor. 
 
@@ -46,8 +28,7 @@ If your already have sass installed, compile the main source files contained ins
 
 [![HTML5](http://mycyberuniverse.com/public-files/images/logos/HTML5.png)]()
 [![CSS3](http://mycyberuniverse.com/public-files/images/logos/CSS3.png)]()
-
-* [AMP](https://www.ampproject.org) - Used to optimize the web page
+[![CSS3](https://github.com/kihuha/Rockmix/blob/version-1.1/img/amp.png)]()
 
 ## Authors
 
