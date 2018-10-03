@@ -4,23 +4,6 @@ This is the central repository for the ROCKMIX INTERNATIONAL LIMITED WEBSITE. Th
 
 Visit the site at https://www.rockmix.co.ke
 
-## Getting Started
-
-### Directory structure
-
-    Rockmix
-            ├───css
-            ├───img
-            │   └───social
-            └───sass
-                ├───abstracts
-                ├───base
-                ├───components
-                ├───layout
-                └───pages
-
-
-
 ## Built With
 HTML
 CSS
