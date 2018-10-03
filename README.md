@@ -1,6 +1,6 @@
 # Rockmix International Limited
 
-This is the central repository for the ROCKMIX INTERNATIONAL WEBSITE. The company manufucutures paints and amazing wall finishes for both interior and exterior walls and decor. 
+This is the central repository for the ROCKMIX INTERNATIONAL LIMITED WEBSITE. The company manufucutures paints and amazing wall finishes for both interior and exterior walls and decor. 
 
 Visit the site at https://www.rockmix.co.ke
 
